@@ -1,3 +1,4 @@
+<style>
 .vrac {
 "X" #000 #fff #fff 2px solid 0 0 0 0 0 100% 100% 100% 1rem 1rem 1rem 2px
 solid #fff 2rem 2rem 2rem 50% absolute auto background-color background-color
@@ -7,11 +8,11 @@ margin max-width padding place-content pointer position position
 rgba(0,0,0,0.9) right right sans-serif text-align top top width width
 }
 .overlay {
-/* Sit on top of the page content */
-/* Full width (cover the whole page) */
-/* Full height (cover the whole page) */
-/* Stay at the top */
-/* Stay at the left */
+position: absolute; /* Sit on top of the page content */
+width: 100vw; /* Full width (cover the whole page) */
+height: 100vh; /* Full height (cover the whole page) */
+top: 0;/* Stay at the top */
+left: 0;/* Stay at the left */
 /* Stay at the right */
 /* Stay at the bottom */
 /* Black background with opacity */
@@ -36,14 +37,18 @@ rgba(0,0,0,0.9) right right sans-serif text-align top top width width
 /* Rounded border */
 }
 .overlay>figure {
+    margin: 0;
 /* No margin */
+padding: 1rem;
 /* 1rem padding */
+border: 2px solid white;
 /* White border of 2px */
 }
 .overlay>figure>img {
 /* Max width 100% for responsive image */
 /* Height auto for keeping the ratio */
 }
+</style>
 
 <h1>Galerie</h1>
 <p>lorem⇥</p>
