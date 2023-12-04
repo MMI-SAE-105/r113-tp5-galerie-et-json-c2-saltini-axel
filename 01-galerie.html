@@ -30,11 +30,18 @@ left: 0;/* Stay at the left */
 }
 .overlay::after {
 /* Add content : "X" */
+content: "X";
 /* White text color */
+color: white;
 /* Black background color */
+background-color: rgba(0, 0, 0, 0.9);
 /* Font family "sans-serif" */
+font-family: sans-serif;
 /* Centered text */
+text-align: center;
 /* Line height ( idem height ) */
+line-height: 2rem;
+height: 2rem;
 /* Display as a block */
 /* Position absolute */
 /* 1rem from the top */
@@ -59,7 +66,7 @@ border: 2px solid white;
 </style>
 </head>
 
-<body x-data="{nomDeProp : 'https://picsum.photos/id/237/200/300',>
+<body x-data="{nomDeProp : 'https://picsum.photos/id/237/200/300'>
 <h1>Galerie</h1>
 <p>lorem⇥</p>
 <div class="overlay" x-show="nomDeProp" @click="nomDeProp" = null @keyup.escape.window="nomDeProp" = null>
