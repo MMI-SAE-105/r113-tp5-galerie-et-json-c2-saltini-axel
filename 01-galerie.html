@@ -7,14 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <style>
-.vrac {
-"X" #000 #fff #fff 2px solid 0 0 0 0 0 100% 100% 100% 1rem 1rem 1rem 2px
-solid #fff 2rem 2rem 2rem 50% absolute auto background-color background-color
-block border border border-radius bottom center center color content cursor
-display display fixed font-family grid height height height left line-height
-margin max-width padding place-content pointer position position
-rgba(0,0,0,0.9) right right sans-serif text-align top top width width
-}
 .overlay {
 position: absolute; /* Sit on top of the page content */
 width: 100vw; /* Full width (cover the whole page) */
@@ -24,7 +16,7 @@ left: 0;/* Stay at the left */
 /* Stay at the right */
 /* Stay at the bottom */
 /* Black background with opacity */
-/* Add a pointer on hover */
+cursor: pointer;/* Add a pointer on hover */
 /* Use a grid for easy centering */
 /* Center vertically and horizontally */
 }
@@ -60,12 +52,12 @@ border: 2px solid white;
 border-radius: 50%;
 }
 .overlay>figure {
-margin: 0;
 /* No margin */
-padding: 1rem;
+margin: 0;
 /* 1rem padding */
-border: 2px solid white;
+padding: 1rem;
 /* White border of 2px */
+border: 2px solid white;
 }
 .overlay>figure>img {
 /* Max width 100% for responsive image */
@@ -77,6 +69,8 @@ border: 2px solid white;
 <body x-data="{nomDeProp : 'https://picsum.photos/id/237/200/300'}">
 <h1>Galerie</h1>
 <p>lorem⇥</p>
+<img src="https://picsum.photos/id/237/40/60" alt="chiot" @click="nomDeProp = 'https://picsum.photos/id/237/200/300'">
+<img src="https://picsum.photos/id/236/40/60" alt="village" @click="nomDeProp = 'https://picsum.photos/id/236/200/300'">
 <div class="overlay" x-show="nomDeProp" @click="nomDeProp" = null @keyup.escape.window="nomDeProp" = null>
     <figure><img src="nomDeProp" alt="image 237... un chiot"></figure>
 </div> 
