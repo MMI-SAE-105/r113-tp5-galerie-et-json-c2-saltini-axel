@@ -30,10 +30,10 @@
     ],
 }">
 
-<template x-for="objet in données">
+<template x-for="obj in données">
     <li>
-        <span x-text="objet.nom">nom</span>
-        <a :href="objet.url" x-text="objet.projet">projet</a>
+        <span x-text="obj.nom">nom</span>
+        <a :href="obj.url" x-text="obj.projet">projet</a>
     </li>
     <ul x-data="{
         async données() {
