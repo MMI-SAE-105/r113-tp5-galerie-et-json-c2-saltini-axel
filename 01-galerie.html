@@ -70,12 +70,12 @@ height: auto;
 </style>
 </head>
 
-<body x-data="{nomDeProp : 'https://picsum.photos/id/237/200/300'}">
+<body x-data="{imageAffichée : 'https://picsum.photos/id/237/200/300'}">
 <h1>Galerie</h1>
 <p>lorem ipsum</p>
-<img src="https://picsum.photos/id/237/40/60" alt="chiot" @click="nomDeProp = 'https://picsum.photos/id/237/200/300'">
-<img src="https://picsum.photos/id/236/40/60" alt="village" @click="nomDeProp = 'https://picsum.photos/id/236/200/300'">
-<div class="overlay" x-show="nomDeProp" @click="nomDeProp = null" @keyup.escape.window="nomDeProp = null">
-    <figure><img :src="nomDeProp" alt="image 237... un chiot"></figure>
+<img src="https://picsum.photos/id/237/40/60" alt="chiot" @click="imageAffichée = 'https://picsum.photos/id/237/200/300'">
+<img src="https://picsum.photos/id/236/40/60" alt="village" @click="imageAffichée = 'https://picsum.photos/id/236/200/300'">
+<div class="overlay" x-show="imageAffichée" @click="imageAffichée = null" @keyup.escape.window="imageAffichée = null">
+    <figure><img :src="imageAffichée" alt="image 237... un chiot"></figure>
 </div> 
 </body>
