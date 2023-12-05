@@ -32,5 +32,6 @@
 
 <template x-for="objet in données">
     <li>
-        <span x-text="objet in données"></span>
+        <span x-text="objet.nom">nom</span>
+        <a :href="objet.url" x-text="objet.projet">projet</a>
     </li>
