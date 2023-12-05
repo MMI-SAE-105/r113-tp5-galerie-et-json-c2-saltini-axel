@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/alpinejs"></script>
     <title>JSON</title>
+</head>
 
 <h1>JSON</h1>
 <ul x-data="{
@@ -27,9 +28,9 @@
             url : 'https://laravel.com/'
         }
     ],
-}">
+}"></ul>
 
 <template x-for="objet in données">
     <li>
-        <span x-text="objet in données">nom</span>
+        <span x-text="objet in données"></span>
     </li>
