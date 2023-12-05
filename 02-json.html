@@ -35,6 +35,12 @@
         <span x-text="objet.nom">nom</span>
         <a :href="objet.url" x-text="objet.projet">projet</a>
     </li>
+    <ul x-data="{
+        async données() {
+            const réponse = await fetch('https://jsonplaceholder.typicode.com/users');
+            const données = await réponse.json();
+            return données;}
+    }"
 </template>
 </ul>
 </html>
