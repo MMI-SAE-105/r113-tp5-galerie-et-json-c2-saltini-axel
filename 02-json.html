@@ -32,7 +32,7 @@
 
 <template x-for="obj in données">
     <li>
-        <span x-text="obj.nom">nom</span>
+        <span x-text="obj.nom">nom</span> :
         <a :href="obj.url" x-text="obj.projet">projet</a>
     </li>
     <ul x-data="{
