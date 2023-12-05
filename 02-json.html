@@ -11,7 +11,7 @@
 
 <h1>JSON</h1>
 <ul x-data="{
-    données : [
+    données: [
         {
             nom : 'Jean',
             projet : 'Alpine.js',
@@ -30,7 +30,7 @@
     ],
 }">
 
-<template x-for='obj in données'>
+<template x-for="obj in données">
     <li>
         <span x-text="obj.nom">nom</span>
         <a :href="obj.url" x-text="obj.projet">projet</a>
